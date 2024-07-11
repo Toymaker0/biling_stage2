@@ -25,7 +25,7 @@ const db = mysql.createConnection({
   database:"bo8aahnsprti9gybrxjd",
 });
 
-app.get("/", async (req, res) => {
+app.get("/z", async (req, res) => {
   try {
     const sql = "SELECT * FROM users_login a,user_rights b where a.id=b.userId";
     db.query(sql, (err, result) => {
